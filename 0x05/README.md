@@ -27,9 +27,12 @@
   
 - 开启状态
   - 对应端口开启监听: tcp在`80`端口提供服务， 开启`80`端口监听可以使用`nc -l -p 80`；`DNS`服务基于`UDP`，在`53`端口提供服务， 开启`53`端口监听可以使用`service dnsmasq start`。
+  
     ~~原来这dnsmasq不是自带的啊 需要补上sudo apt-get install dnsmasq~~
+  
     检查：`netstat -ntlp #for tcp`
     			`netstat -nulp #for udp`
+  
   - 防火墙处于关闭状态
   
 - 过滤状态
@@ -59,9 +62,13 @@
 ### 实验环境
 
 - Kali Attacker:172.16.111.133
+
   Kali Victim:172.16.111.111
+
   debian gateway with internalnet1
+
   VS Code
+
   scapy+python
 
 ### 先验知识
@@ -351,14 +358,14 @@ elif(null_scan_resp.haslayer(ICMP)):
 
 ### Ref.
 
-[泽林哥哥的仓库][https://github.com/CUCCS/2021-ns-public-EddieXu1125/tree/chap0x05/chap0x05]
+[泽林哥哥的仓库](https://github.com/CUCCS/2021-ns-public-EddieXu1125/tree/chap0x05/chap0x05)
 
-[袁哥哥的仓库][https://github.com/CUCCS/2021-ns-public-Itzhakrees/blob/chap0x05/chap0x05/report.md]
+[袁哥哥的仓库](https://github.com/CUCCS/2021-ns-public-Itzhakrees/blob/chap0x05/chap0x05/report.md)
 
-[亲爱的同桌的仓库][https://github.com/CUCCS/2021-ns-public-AltSuperBlade/tree/chap0x05/chap0x05]
+[亲爱的同桌的仓库](https://github.com/CUCCS/2021-ns-public-AltSuperBlade/tree/chap0x05/chap0x05)
 
-[关于ufw][https://linux.cn/article-12079-1.html]
+[关于ufw](https://linux.cn/article-12079-1.html)
 
-[IPv4分析][https://www.cnblogs.com/craftor/p/3811739.html]
+[IPv4分析](https://www.cnblogs.com/craftor/p/3811739.html)
 
 [TCP标志位详解（TCP Flag）](https://blog.csdn.net/ChenVast/article/details/77978367)
